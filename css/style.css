@@ -471,3 +471,8 @@ header.fixedHeader::before {
 #contact form .submitbtn a:hover,#contact form .submitbtn a:active,#contact form .submitbtn a:focus {
 	background-color: rgba(128, 189, 255,0.6);
 }
+#contact .form-control:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px rgb(245,245,245) inset;
+	border-color: #80bdff;
+	text-shadow: 0 0 0;
+}
