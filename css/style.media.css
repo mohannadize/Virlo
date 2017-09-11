@@ -211,6 +211,31 @@
 		margin: 0;
 		margin-bottom: 14px;
 	}
+	#contact form {
+		width: 95vw;
+		margin-left: 6.25vw;
+		border-right: 0;
+		padding-bottom: 0;
+	}
+	#contact .social.formL {
+		width: 100vw;
+		margin-top: 50px;
+	}
+	#contact {
+		padding-bottom: 0;
+	}
+	#contact::before {
+		width: 250vw;
+		left: -75vw;
+	}
+	#contact .form {
+		width: 100vw;
+		display: block;
+	}
+	#contact .form .title {
+		text-align: center;
+		margin-left: 0;
+	}
 }
 @media (min-width: 600px) and (max-width: 768px) {
 	#intro {
@@ -278,6 +303,16 @@
 	#videos .video .Vtitle {
 		font-size: 16px;
 	}
+	#contact form {
+		width: 90vw;
+		margin-left: 6.25vw;
+		border-right: 0;
+		padding-bottom: 0;
+	}
+	#contact .social.formL {
+		width: 100vw;
+		margin-top: 50px;
+	}
 }
 @media (min-width: 769px) and (max-width: 1024px){
 	header .VlinkA span {
@@ -310,6 +345,13 @@
 	#videos .video .Vtitle {
 		font-size: 16px;
 	}
+	#contact form {
+		width: 70vw;
+		margin-left: 5vw;
+	}
+	#contact .social.formL {
+		width: 10vw;
+	}
 }
 @media (min-width: 1024px) {
 	.nav .youtubeLink {
@@ -327,4 +369,9 @@
 		width: 350px;
 		height: 350px;
 	}
+	#contact form {
+		width: 35vw;
+		margin-left: 20vw;
+	}
+
 }

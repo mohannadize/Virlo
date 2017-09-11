@@ -171,7 +171,7 @@ header.fixedHeader::before {
 }
 #videos .title h2 {
 	font-weight: 300;
-	background-color: #0c1730;
+	background-image: linear-gradient(45deg, rgba(12, 23, 48,1),transparent 500%);
 	display: inline-block;
 	color: white;
 	padding-top: 15px;
@@ -339,7 +339,8 @@ header.fixedHeader::before {
 	width: 100%;
 	position: relative;
 	overflow:hidden;
-	padding-top: 135px
+	padding-top: 135px;
+	padding-bottom: 75px;
 }
 #contact::before {
 	content: "";
@@ -348,7 +349,8 @@ header.fixedHeader::before {
 	top: 100px;
 	bottom: 0;
 	right: 0;
-	width: 100%;
+	left: -25vw;
+	width: 150vw;
 	height: 100%;
 	border-radius: 50% 50% 0 0;
 	background-color: rgb(50,50,50);
@@ -373,6 +375,8 @@ header.fixedHeader::before {
 	text-align: center;
 	margin-left: 15px;
 	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	font-size: 36px;
 }
 #contact .social li a {
@@ -384,4 +388,86 @@ header.fixedHeader::before {
 }
 #contact .social li a.hoverOn {
 	color:white;
+}
+#contact .form {
+	display: inline-block;
+}
+#contact .form .title {
+	position: static;
+	margin-top: 50px;
+	margin-left: 12.5vw;
+}
+#contact .form .title span {
+	font-size: 24px;
+	cursor: default;
+	color: white;
+	background-image: linear-gradient(45deg,rgba(128, 189, 255,0.5),transparent 120%);
+	padding-left: 15px;
+	border-radius: 12px;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-left: 4px solid rgba(128, 189, 255,0.8);
+	box-shadow: 0 3px 4px -1px rgba(0,0,0,0.3);
+}
+#contact form {
+	display: inline-block;
+	width: 45vw;
+	margin-top: 30px;
+	padding-right: 25px;
+	margin-right: 25px;
+	border-right: 2px solid;
+	border-image:linear-gradient(0deg, transparent, rgba(255, 255, 255,0.5),transparent) 1 100%;
+	margin-left: 12.5vw;
+}
+#contact form label {
+	color: white;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.4)
+}
+#contact form .form-control {
+	border-radius: 12px;
+	border-top: 0;
+	border-bottom: 0;
+	border-left-width: 4px;
+	border-right-width: 4px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-shadow: 0 0 3px #80bdff;
+}
+#contact form textarea {
+	resize: none;
+	height: 200px;
+}
+#contact form .submitbtn {
+	position: relative;
+	margin-left: auto;
+	margin-right: 15px;
+}
+#contact .social.formL {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 175px;
+}
+#contact form .submitbtn {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+}
+#contact form .submitbtn a {
+	color: white;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+	text-decoration: none;
+	padding: 7px;
+	padding-left: 14px;
+	padding-right: 14px;
+	border-radius: 7px;
+	border-right: 3px solid #7caaef;
+	border-left: 3px solid #7caaef;
+	background-color: rgba(128, 189, 255,0.7);
+	transition: all 250ms ease;
+}
+#contact form .submitbtn a:hover,#contact form .submitbtn a:active,#contact form .submitbtn a:focus {
+	background-color: rgba(128, 189, 255,0.6);
 }
