@@ -15,6 +15,14 @@ body {
         -ms-user-select: none; 
             user-select: none; 
 }
+.select {
+  -webkit-touch-callout: initial; 
+    -webkit-user-select: initial; 
+     -khtml-user-select: initial; 
+       -moz-user-select: initial; 
+        -ms-user-select: initial; 
+            user-select: initial; 
+}
 header {
 	padding-top: 17px;
 	padding-left: 25px;
@@ -79,6 +87,7 @@ header.fixedHeader::before {
 	text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 .nav li a:hover {
+	text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 	color: rgb(0,0,0);
 	text-decoration: none;
 }
@@ -294,6 +303,7 @@ header.fixedHeader::before {
 	width: inherit;
 	z-index: -1;
 	pointer-events: none;
+	background-color: white;
 }
 #about .info {
 	display: inline-block;
@@ -503,4 +513,64 @@ header.fixedHeader::before {
 }
 #contact .donate a:hover,#contact .donate a:active,#contact .donate a:focus {
 	text-shadow: 0 2px 3px rgba(128, 189, 255,1);
+}
+#team {
+	position: relative;
+	display: block;
+	width: 80vw;
+	text-align: center;
+	margin: auto;
+	cursor: default;
+}
+#team .title {
+	padding-bottom: 85px; 
+}
+#team .title h2 {
+	font-weight: 300;
+	background-image: linear-gradient(45deg, rgba(12, 23, 48,1),transparent 500%);
+	display: inline-block;
+	color: white;
+	padding-top: 11px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 10px;
+	border-left: 4px solid #9b9b9b;
+	border-right: 4px solid #9b9b9b;
+	box-shadow: 0 7px 14px -7px rgba(0,0,0,0.7);
+}
+#team .member {
+	width: 230px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 45px;
+	border-radius: 15px;
+	padding-bottom: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	transition: all 250ms ease;
+	box-shadow: 0 5px 9px -3px rgba(0,0,0,0);
+}
+#team .member:hover, #team .member:active, #team .member:focus {
+	box-shadow: 0 5px 15px -3px rgba(0,0,0,0.2);
+}
+#team .member .avatar {
+	width: 80%;
+	position: relative;
+	top: -30px;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: inset 0 0 55px 0 rgba(0,0,0,0.7);
+}
+#team .member .avatar img {
+	width: 100%;
+	margin: 0;
+	z-index: -1;
+}
+#team .member h6 {
+	font-weight: 400;
+	color: rgb(150,150,150)
 }
