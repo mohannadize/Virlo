@@ -1,3 +1,8 @@
+@font-face {
+	font-family: donut;
+	src: url("../fonts/PWYummyDonuts.ttf");
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -448,6 +453,7 @@ header.fixedHeader::before {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 175px;
+	width: 30%;
 }
 #contact form .submitbtn {
 	text-align: right;
@@ -475,4 +481,26 @@ header.fixedHeader::before {
 	-webkit-box-shadow: 0 0 0 30px rgb(245,245,245) inset;
 	border-color: #80bdff;
 	text-shadow: 0 0 0;
+}
+#contact .social.formL .donate {
+	display: block;
+	margin: auto;
+	color: white;
+	font-size: 18px;
+	margin-top: 25px;
+	text-align: left;
+	cursor: default;
+	width: 90%;
+	margin-left: 5%;
+}
+#contact .donate a {
+	font-family: donut;
+	color: white;
+	font-size: 36px;
+	text-decoration: none;
+	transition: text-shadow 250ms ease;
+	text-shadow: 0 2px 3px rgba(128, 189, 255,0);
+}
+#contact .donate a:hover,#contact .donate a:active,#contact .donate a:focus {
+	text-shadow: 0 2px 3px rgba(128, 189, 255,1);
 }

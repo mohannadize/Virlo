@@ -30,6 +30,7 @@
 		<div class="nav">
 			<ul>
 				<li><a href="#about">About</a></li>
+				<!-- <li><a href="#team">Team</a></li> -->
 				<li><a href="#videos">Videos</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -78,6 +79,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- <div id="team"></div> -->
 	<div id="videos" class="noselect">
 		<div class="title">
 			<h2>Latest Videos</h2>
@@ -150,6 +152,11 @@
 				<li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
 			</ul>
+			<div class="donate">
+				<h2>Help Martex</h2>
+				<p>We hope you have enjoyed using Virlo! If you feel like donating to help the great work, donut hesitate :)</p>
+				<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mohannadize15@gmail.com&currency_code=USD&item_name=Virlo%20-%20Donate' target="_blank">Donate</a>
+			</div>
 		</div>
 	</div>
 
@@ -169,7 +176,7 @@
 			var nav = $("header .nav");
 			nav.toggleClass("open");
 		}
-		setInterval(headerToggle,150);
+		$(window).scroll(headerToggle);
 		var img = document.querySelector("#about .pic img");
 
 		$(function() {
