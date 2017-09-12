@@ -174,6 +174,7 @@ header.fixedHeader::before {
 #videos {
 	position:relative;
 	margin-bottom: 100px;
+	padding-top: 20px;
 }
 #videos .title{
 	position: relative;
@@ -517,9 +518,10 @@ header.fixedHeader::before {
 #team {
 	position: relative;
 	display: block;
-	width: 80vw;
+	width: 84vw;
 	text-align: center;
 	margin: auto;
+	padding-top: 110px;
 	cursor: default;
 }
 #team .title {
@@ -540,7 +542,7 @@ header.fixedHeader::before {
 	box-shadow: 0 7px 14px -7px rgba(0,0,0,0.7);
 }
 #team .member {
-	width: 230px;
+	width: 250px;
 	vertical-align: middle;
 	display: inline-block;
 	margin-right: 15px;
@@ -556,19 +558,29 @@ header.fixedHeader::before {
 	box-shadow: 0 5px 15px -3px rgba(0,0,0,0.2);
 }
 #team .member .avatar {
-	width: 80%;
+	width: 200px;
+	height: 200px;
 	position: relative;
 	top: -30px;
 	display: block;
 	margin: auto;
 	overflow: hidden;
 	border-radius: 50%;
-	box-shadow: inset 0 0 55px 0 rgba(0,0,0,0.7);
+}
+#team .member .avatar::before {
+	content: "";
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 30px -5px rgba(0,0,0,0.3);
+    border-radius: inherit;
+    top: 0;
+    left: 0;
 }
 #team .member .avatar img {
+	border-radius: 50%;
 	width: 100%;
 	margin: 0;
-	z-index: -1;
 }
 #team .member h6 {
 	font-weight: 400;

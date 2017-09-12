@@ -87,7 +87,7 @@
 			<div class="avatar">
 				<img src="img/team1.jpg">
 			</div>
-			<h4 class="name select">{Name}</h4>
+			<h5 class="name select">{Name}</h5>
 			<h6 class="role">{Role}</h6>
 			<p class="desc">{Description}</p>
 		</div>
@@ -95,7 +95,7 @@
 			<div class="avatar">
 				<img src="img/team3.jpg">
 			</div>
-			<h4 class="name select">{Name}</h4>
+			<h5 class="name select">{Name}</h5>
 			<h6 class="role">{Role}</h6>
 			<p class="desc">{Description}</p>
 		</div>
@@ -103,7 +103,7 @@
 			<div class="avatar">
 				<img src="img/team2.jpg">
 			</div>
-			<h4 class="name select">{Name}</h4>
+			<h5 class="name select">{Name}</h5>
 			<h6 class="role">{Role}</h6>
 			<p class="desc">{Description}</p>
 		</div>
@@ -111,7 +111,7 @@
 			<div class="avatar">
 				<img src="img/team4.jpg">
 			</div>
-			<h4 class="name select">{Name}</h4>
+			<h5 class="name select">{Name}</h5>
 			<h6 class="role">{Role}</h6>
 			<p class="desc">{Description}</p>
 		</div>
@@ -218,13 +218,12 @@
 		$(function() {
 		    var vibrant = new Vibrant(img);
 		    var swatches = vibrant.swatches()
-		    for (var swatch in swatches)
-		        if (swatches.hasOwnProperty(swatch) && swatches[swatch] && swatch == "DarkVibrant") {
-		            $("#about .info .circle").css("background-color",swatches[swatch].getHex());
-		            break;
-		        } else {
-		        	$("#about .info .circle").css("background-color","#474747");
-		        };
+	        if (swatches.hasOwnProperty("DarkVibrant") && swatches["DarkVibrant"]) {
+	            $("#about .info .circle").css("background-color",swatches["DarkVibrant"].getHex());
+	        } else {
+	        	$("#about .info .circle").css("background-color","#474747");
+	        };
+		    
 		});
 		$("#contact .social li a").hover(function(){
 			var me = $(this);
