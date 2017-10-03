@@ -493,16 +493,20 @@ header.fixedHeader::before {
 	border-color: #80bdff;
 	text-shadow: 0 0 0;
 }
-#contact .social.formL .donate {
+
+#contact .social .donate, #contact .social.formL .donate {
 	display: block;
 	margin: auto;
 	color: white;
 	font-size: 18px;
 	margin-top: 25px;
-	text-align: left;
+	text-align: center;
 	cursor: default;
 	width: 90%;
-	margin-left: 5%;
+}
+#contact .social.formL .donate {
+	margin-left: 5%;		
+	text-align: left;
 }
 #contact .donate a {
 	font-family: donut;
